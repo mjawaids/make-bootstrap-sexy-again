@@ -1,6 +1,6 @@
 # Make Bootstrap Sexy Again
 
-> A Vue.js project to preview Bootstrap 4 customizations.
+> Demonstrates Bootstrap 4 integration and customization with Vue.js
 
 ## About
 Based on the webpack-simple template for vue-cli.

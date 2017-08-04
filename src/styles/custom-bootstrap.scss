@@ -58,6 +58,38 @@ $font-family-serif:      	Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:  	Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:       	$font-family-sans-serif;
 
+// Tweak spacers
+$spacer:   1rem;
+$spacer-x: $spacer;
+$spacer-y: $spacer;
+$spacers: (
+  // 0 is zero
+  0: (
+    x: 0,
+    y: 0
+  ),
+  1: (
+    x: ($spacer-x * .25),
+    y: ($spacer-y * .25)
+  ),
+  2: (
+    x: ($spacer-x * .5),
+    y: ($spacer-y * .5)
+  ),
+  3: (
+    x: $spacer-x,
+    y: $spacer-y
+  ),
+  4: (
+    x: ($spacer-x * 1.5),
+    y: ($spacer-y * 1.5)
+  ),
+  5: (
+    x: ($spacer-x * 3),
+    y: ($spacer-y * 3)
+  )
+);
+
 // Set global options
 $enable-shadows:			false;
 $enable-gradients:			true;
