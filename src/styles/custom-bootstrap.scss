@@ -18,26 +18,26 @@ $gray-lighter:              #ededed;
 $gray-lightest:             #FAFAFA;
 
 // Set brand colors
-$brand-primary:		$blue;
-$brand-success:		$green;
-$brand-info:		$yellow;
-$brand-warning:		$orange;
-$brand-danger:		$red;
+$primary:		$blue;
+$success:		$green;
+$info:		    $yellow;
+$warning:		$orange;
+$danger:		$red;
 
 // Override button colors
-$btn-info-color:		darken($brand-info, 45);
+$btn-info-color:		darken($info, 45);
 
 // Override alert background colors
-$state-success-bg:		lighten($brand-success, 30);
-$state-info-bg:			lighten($brand-info, 30);
-$state-warning-bg:		lighten($brand-warning, 30);
-$state-danger-bg:		lighten($brand-danger, 45);
+$state-success-bg:		lighten($success, 30);
+$state-info-bg:			lighten($info, 30);
+$state-warning-bg:		lighten($warning, 30);
+$state-danger-bg:		lighten($danger, 45);
 
 // Override alert text colors
-$state-success-text:		darken($brand-success, 30);
-$state-info-text:			darken($brand-info, 30);
-$state-warning-text:		darken($brand-warning, 30);
-$state-danger-text:			darken($brand-danger, 10);
+$state-success-text:		darken($success, 30);
+$state-info-text:			darken($info, 30);
+$state-warning-text:		darken($warning, 30);
+$state-danger-text:			darken($danger, 10);
 
 // Override badges padding (doubled because otherwise too crammed)
 $badge-padding-x:             .8em;
