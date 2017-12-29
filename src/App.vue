@@ -20,29 +20,18 @@
 		<!-- Buttons-->
 		<h2>Buttons</h2>
 		<div style="padding: 1rem;">
-			  <div v-for="type in [null, 'outline']">
-				  <span v-for="brand in ['primary', 'secondary', 'success', 'info', 'warning', 'danger']">
-					  <button role="button" class="btn" :class="'btn-' + (type != null ? (type + '-') : '') + brand" style="margin-bottom: 1rem; margin-right: 1rem;">
+			  <div v-for="type in ['', 'outline']" :key="type">
+				  <span v-for="brand in ['primary', 'secondary', 'success', 'info', 'warning', 'danger']" :key="brand">
+					  <button role="button" class="btn" :class="'btn-' + (type.length ? (type + '-') : '') + brand" style="margin-bottom: 1rem; margin-right: 1rem;">
 						  {{brand}} {{type}}
 					  </button>
 				  </span>
-			  </div>
-			  <div class="btn-group" data-toggle="buttons">
-			    <label class="btn btn-primary active">
-			      <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
-			    </label>
-			    <label class="btn btn-primary">
-			      <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
-			    </label>
-			    <label class="btn btn-primary">
-			      <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
-			    </label>
 			  </div>
 		</div>
 		<!-- Progress-->
 		<h2>Progress</h2>
 		<div style="padding: 1rem;">
-		  <div v-for="brand in ['success', 'info', 'warning', 'danger']" class="progress" style='margin-bottom: 1rem;'>
+		  <div v-for="brand in ['success', 'info', 'warning', 'danger']" :key="brand" class="progress" style='margin-bottom: 1rem;'>
 			  <div class="progress-bar" :class="'bg-' + brand" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 		  </div>
 		</div>
@@ -70,7 +59,7 @@
 		<!-- Spacing utilities-->
 		<h2>Spacing utilities</h2>
 		<div style="padding: 1rem;">
-		  <div v-for="brand in ['success', 'info', 'warning', 'danger']" class="progress" style='margin-bottom: 1rem;'>
+		  <div v-for="brand in ['success', 'info', 'warning', 'danger']" :key="brand" class="progress" style='margin-bottom: 1rem;'>
 			  <div class="progress-bar" :class="'bg-' + brand" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 		  </div>
 		</div>
