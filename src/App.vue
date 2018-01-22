@@ -5,7 +5,7 @@
 		<!-- Alerts -->
 		<h2>Alerts</h2>
 		<div style="padding: 1rem;">
-			<div v-for="brand in ['success', 'info', 'warning', 'danger']" class="alert" :class="'alert-' + brand">
+			<div v-for="brand in ['success', 'info', 'warning', 'danger']" :key="brand" class="alert" :class="'alert-' + brand">
 	  		  <strong>Well done!</strong> You successfully read this {{brand}} alert message.
 	  	    </div>
 		</div>
@@ -54,13 +54,6 @@
 		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 		      </div>
 		    </div>
-		  </div>
-		</div>
-		<!-- Spacing utilities-->
-		<h2>Spacing utilities</h2>
-		<div style="padding: 1rem;">
-		  <div v-for="brand in ['success', 'info', 'warning', 'danger']" :key="brand" class="progress" style='margin-bottom: 1rem;'>
-			  <div class="progress-bar" :class="'bg-' + brand" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 		  </div>
 		</div>
 	  </div>
