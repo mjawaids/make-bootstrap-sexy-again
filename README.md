@@ -24,3 +24,7 @@ npm run build
 ## Guide
 
 Copy customizations into 'styles/custom-bootstrap.scss file.'
+
+## Twitter
+
+[Follow me on Twitter](https://twitter.com/KrolsBjorn)
