@@ -1,4 +1,4 @@
-# Make Bootstrap Sexy Again
+# Make Bootstrap Awesom With Vue.js
 
 > Demonstrates Bootstrap 4 integration and customization with Vue.js.
 
@@ -27,4 +27,4 @@ Copy customizations into 'styles/custom-bootstrap.scss file.'
 
 ## Twitter
 
-[Follow me on Twitter](https://twitter.com/KrolsBjorn)
+[Follow me on Twitter](https://twitter.com/mjawaids)
